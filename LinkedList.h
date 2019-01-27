@@ -39,8 +39,9 @@ public :
 class DoubleLinked
 {
 	Node head;
+	int size = 0;
 public:
-	DoubleLinked() : head(0) {}
+	DoubleLinked() : head(0), size(0) {}
 	~DoubleLinked() { while (isEmpty()) delete remove(0); }
 	Node* getHead() { return head.getNext(); }
 	bool isEmpty() { return getHead() == NULL; }
@@ -58,12 +59,17 @@ public:
 	{
 		Node* prev = getEntry(num - 1);
 		if (prev != NULL)
+		{
 			prev->insertNext(n);
+			size++;
+		}
 	}
 
 	Node* remove(int num)
 	{
 		Node* n = getEntry(num);
+		if (n != NULL)
+			size--;
 		return n->removeNext();
 	}
 
@@ -86,9 +92,12 @@ public:
 	}
 
 	int size() {
+		/*
 		int count = 0;
 		for (Node* p = getHead(); p != NULL; p = p->getNext())
 			count++;
 		return count;
+		*/
+		return size;
 	}
 };
