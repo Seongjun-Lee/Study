@@ -17,7 +17,7 @@ typedef struct Node
 	INFO Info;
 	Node* next;
 	Node* prev;
-
+	
 	Node(int num = 0) : Info(num) {};
 }Node, *pNode;
 
