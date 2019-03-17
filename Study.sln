@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TextRpg", "TextRpg\TextRpg.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Maze", "Maze\Maze.vcxproj", "{ACF06564-5BF1-471E-982A-F213238AD764}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinApi", "WinApi\WinApi.vcxproj", "{102C02ED-DEBF-4E0B-8165-866DDEDBCB68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{ACF06564-5BF1-471E-982A-F213238AD764}.Release|x64.Build.0 = Release|x64
 		{ACF06564-5BF1-471E-982A-F213238AD764}.Release|x86.ActiveCfg = Release|Win32
 		{ACF06564-5BF1-471E-982A-F213238AD764}.Release|x86.Build.0 = Release|Win32
+		{102C02ED-DEBF-4E0B-8165-866DDEDBCB68}.Debug|x64.ActiveCfg = Debug|x64
+		{102C02ED-DEBF-4E0B-8165-866DDEDBCB68}.Debug|x64.Build.0 = Debug|x64
+		{102C02ED-DEBF-4E0B-8165-866DDEDBCB68}.Debug|x86.ActiveCfg = Debug|Win32
+		{102C02ED-DEBF-4E0B-8165-866DDEDBCB68}.Debug|x86.Build.0 = Debug|Win32
+		{102C02ED-DEBF-4E0B-8165-866DDEDBCB68}.Release|x64.ActiveCfg = Release|x64
+		{102C02ED-DEBF-4E0B-8165-866DDEDBCB68}.Release|x64.Build.0 = Release|x64
+		{102C02ED-DEBF-4E0B-8165-866DDEDBCB68}.Release|x86.ActiveCfg = Release|Win32
+		{102C02ED-DEBF-4E0B-8165-866DDEDBCB68}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
