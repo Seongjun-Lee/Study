@@ -5,6 +5,6 @@ d:\study\winapi\winapi.cpp(368): warning C4244: '=': 'LONG'에서 'float'(으)�
 d:\study\winapi\winapi.cpp(374): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 d:\study\winapi\winapi.cpp(379): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 d:\study\winapi\winapi.cpp(380): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\winapi\winapi.cpp(410): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\winapi\winapi.cpp(414): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\study\winapi\winapi.cpp(411): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\study\winapi\winapi.cpp(415): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   WinApi.vcxproj -> D:\Study\x64\Debug\WinApi.exe
