@@ -30,7 +30,7 @@ CLayer * CScene::CreateLayer(const string & strTag, int iZOrder)
 
 bool CScene::Init()
 {
-	return false;
+	return true;
 }
 
 void CScene::Input(float fDeltaTime)
@@ -38,7 +38,7 @@ void CScene::Input(float fDeltaTime)
 	list<CLayer*>::iterator iter;
 	list<CLayer*>::iterator iterEnd = m_LayerList.end();
 
-	for (iter = m_LayerList.begin(); iter != iterEnd; ++iterEnd)
+	for (iter = m_LayerList.begin(); iter != iterEnd; ++iter)
 	{
 		(*iter)->Input(fDeltaTime);
 	}
@@ -49,7 +49,7 @@ int CScene::Update(float fDeltaTime)
 	list<CLayer*>::iterator iter;
 	list<CLayer*>::iterator iterEnd = m_LayerList.end();
 
-	for (iter = m_LayerList.begin(); iter != iterEnd; ++iterEnd)
+	for (iter = m_LayerList.begin(); iter != iterEnd; ++iter)
 	{
 		(*iter)->Update(fDeltaTime);
 	}
@@ -61,7 +61,7 @@ int CScene::LateUpdate(float fDeltaTime)
 	list<CLayer*>::iterator iter;
 	list<CLayer*>::iterator iterEnd = m_LayerList.end();
 
-	for (iter = m_LayerList.begin(); iter != iterEnd; ++iterEnd)
+	for (iter = m_LayerList.begin(); iter != iterEnd; ++iter)
 	{
 		(*iter)->LateUpdate(fDeltaTime);
 	}
@@ -73,7 +73,7 @@ void CScene::Collision(float fDeltaTime)
 	list<CLayer*>::iterator iter;
 	list<CLayer*>::iterator iterEnd = m_LayerList.end();
 
-	for (iter = m_LayerList.begin(); iter != iterEnd; ++iterEnd)
+	for (iter = m_LayerList.begin(); iter != iterEnd; ++iter)
 	{
 		(*iter)->Collision(fDeltaTime);
 	}
@@ -84,7 +84,7 @@ void CScene::Render(HDC hDC, float fDeltaTime)
 	list<CLayer*>::iterator iter;
 	list<CLayer*>::iterator iterEnd = m_LayerList.end();
 
-	for (iter = m_LayerList.begin(); iter != iterEnd; ++iterEnd)
+	for (iter = m_LayerList.begin(); iter != iterEnd; ++iter)
 	{
 		(*iter)->Render(hDC, fDeltaTime);
 	}

@@ -13,7 +13,7 @@ protected:
 	list<class CLayer*> m_LayerList;
 
 public:
-	class CLayer* CreateLayer(const string & strTag, int iZOrder = 0);
+	class CLayer* CreateLayer(const string& strTag, int iZOrder = 0);
 
 public:
 	virtual bool Init();
