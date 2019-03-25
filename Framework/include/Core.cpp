@@ -1,5 +1,6 @@
 #include "Core.h"
 #include "Scene\SceneManager.h"
+#include "Core\Timer.h"
 
 CCore* CCore::m_plnst = NULL;
 bool CCore::m_bLoop = true;
@@ -11,6 +12,7 @@ CCore::CCore()
 CCore::~CCore()
 {
 	DESTROY_SINGLE(CSceneManager);
+	DESTROY_SINGLE(CTimer);
 }
 
 bool CCore::Init(HINSTANCE hInst)
@@ -21,9 +23,14 @@ bool CCore::Init(HINSTANCE hInst)
 
 	m_tRS.iW = 1280;
 	m_tRS.iH = 720;
-
-	Create();
 	
+	Create();
+
+	m_hDC = GetDC(m_hWnd);
+	
+	if (!GET_SINGLE(CTimer)->Init())
+		return false;
+
 	if (!GET_SINGLE(CSceneManager)->init())
 		return false;
 
@@ -44,10 +51,50 @@ int CCore::Run()
 		}
 		else
 		{
+			Logic();
 		}
 	}
 
 	return (int)msg.wParam;
+}
+void CCore::Logic()
+{
+	GET_SINGLE(CTimer)->Update();
+
+	float fDeltaTime = GET_SINGLE(CTimer)->GetDeltaTime();
+
+	Input(fDeltaTime);
+	Update(fDeltaTime);
+	LateUpdate(fDeltaTime);
+	Collision(fDeltaTime);
+	Render(fDeltaTime);
+}
+
+void CCore::Input(float fDeltaTime)
+{
+	GET_SINGLE(CSceneManager)->Input(fDeltaTime);
+}
+
+int CCore::Update(float fDeltaTime)
+{
+	GET_SINGLE(CSceneManager)->Update(fDeltaTime);
+	return 0;
+}
+
+int CCore::LateUpdate(float fDeltaTime)
+{
+	GET_SINGLE(CSceneManager)->LateUpdate(fDeltaTime);
+	return 0;
+}
+
+void CCore::Collision(float fDeltaTime)
+{
+	GET_SINGLE(CSceneManager)->Collision(fDeltaTime);
+}
+
+void CCore::Render(float fDeltaTime)
+{
+	GET_SINGLE(CSceneManager)->Render(m_hDC, fDeltaTime);
 }
 
 ATOM CCore::MyRegisterClass()

@@ -9,6 +9,11 @@ private:
 	class CScene* m_pNextScene;
 public:
 	bool init();
+	void Input(float fDeltaTime);
+	int Update(float fDeltaTime);
+	int LateUpdate(float fDeltaTime);
+	void Collision(float fDeltaTime);
+	void Render(HDC hDC, float fDeltaTime);
 
 public:
 	template <typename T>
@@ -26,7 +31,7 @@ public:
 		{
 		case SC_CURRENT:
 			SAFE_DELETE(m_pScene);
-			m_pScene = sc;
+			m_pScene = pScene;
 			break;
 		case SC_NEXT:
 			SAFE_DELETE(m_pNextScene);

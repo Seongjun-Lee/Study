@@ -22,7 +22,10 @@
     <ClCompile Include="include\Core.cpp" />
     <ClCompile Include="include\Core\Timer.cpp" />
     <ClCompile Include="include\Main.cpp" />
+    <ClCompile Include="include\Object\Obj.cpp" />
+    <ClCompile Include="include\Ref.cpp" />
     <ClCompile Include="include\Scene\InGameScene.cpp" />
+    <ClCompile Include="include\Scene\Layer.cpp" />
     <ClCompile Include="include\Scene\Scene.cpp" />
     <ClCompile Include="include\Scene\SceneManager.cpp" />
   </ItemGroup>
@@ -32,8 +35,11 @@
     <ClInclude Include="include\Flag.h" />
     <ClInclude Include="include\Game.h" />
     <ClInclude Include="include\Macro.h" />
+    <ClInclude Include="include\Object\Obj.h" />
+    <ClInclude Include="include\Ref.h" />
     <ClInclude Include="include\resource.h" />
     <ClInclude Include="include\Scene\InGameScene.h" />
+    <ClInclude Include="include\Scene\Layer.h" />
     <ClInclude Include="include\Scene\Scene.h" />
     <ClInclude Include="include\Scene\SceneManager.h" />
     <ClInclude Include="include\Types.h" />

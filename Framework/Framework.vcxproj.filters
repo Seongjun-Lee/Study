@@ -22,6 +22,12 @@
     <Filter Include="1.Core\1.Timer">
       <UniqueIdentifier>{3f497e0a-cbf0-4af3-9e00-c95a3f5a3687}</UniqueIdentifier>
     </Filter>
+    <Filter Include="2.Scene\1.Layer">
+      <UniqueIdentifier>{4abd0c0c-31cb-4e69-a69e-2f697c9be905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3.Object">
+      <UniqueIdentifier>{fa10e261-7c4a-4516-a0ff-804104694973}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\Main.cpp">
@@ -41,6 +47,15 @@
     </ClCompile>
     <ClCompile Include="include\Core\Timer.cpp">
       <Filter>1.Core\1.Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Scene\Layer.cpp">
+      <Filter>2.Scene\1.Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Object\Obj.cpp">
+      <Filter>3.Object</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Ref.cpp">
+      <Filter>1.Core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +88,15 @@
     </ClInclude>
     <ClInclude Include="include\Core\Timer.h">
       <Filter>1.Core\1.Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\Layer.h">
+      <Filter>2.Scene\1.Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Object\Obj.h">
+      <Filter>3.Object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Ref.h">
+      <Filter>1.Core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
