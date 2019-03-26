@@ -28,6 +28,18 @@
     <Filter Include="3.Object">
       <UniqueIdentifier>{fa10e261-7c4a-4516-a0ff-804104694973}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3.Object\1.MoveObj">
+      <UniqueIdentifier>{16583e0f-001f-4db4-af66-3631522bf107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3.Object\2.StaticObj">
+      <UniqueIdentifier>{faa3f391-0893-4175-9aa9-4d86f2932a21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3.Object\1.MoveObj\1.Player">
+      <UniqueIdentifier>{3af88ea7-55a3-4536-bd16-b30442b307c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3.Object\1.MoveObj\2.Monster">
+      <UniqueIdentifier>{152f9470-c871-4a18-af0e-f48ef01e745e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\Main.cpp">
@@ -56,6 +68,18 @@
     </ClCompile>
     <ClCompile Include="include\Ref.cpp">
       <Filter>1.Core</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Object\MoveObj.cpp">
+      <Filter>3.Object\1.MoveObj</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Object\StaticObj.cpp">
+      <Filter>3.Object\2.StaticObj</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Object\Player.cpp">
+      <Filter>3.Object\1.MoveObj\1.Player</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Object\Minion.cpp">
+      <Filter>3.Object\1.MoveObj\2.Monster</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +121,18 @@
     </ClInclude>
     <ClInclude Include="include\Ref.h">
       <Filter>1.Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Object\MoveObj.h">
+      <Filter>3.Object\1.MoveObj</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Object\StaticObj.h">
+      <Filter>3.Object\2.StaticObj</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Object\Player.h">
+      <Filter>3.Object\1.MoveObj\1.Player</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Object\Minion.h">
+      <Filter>3.Object\1.MoveObj\2.Monster</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
