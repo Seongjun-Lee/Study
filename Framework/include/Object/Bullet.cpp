@@ -19,6 +19,7 @@ CBullet::~CBullet()
 
 bool CBullet::Init()
 {
+	SetSpeed(500.f);
 	return true;
 }
 
@@ -26,7 +27,7 @@ int CBullet::Update(float fDeltaTime)
 {
 	CMoveObj::Update(fDeltaTime);
 
-	MoveAngle();
+	MoveAngle(fDeltaTime);
 
 	m_fDist += GetSpeed() * fDeltaTime;
 

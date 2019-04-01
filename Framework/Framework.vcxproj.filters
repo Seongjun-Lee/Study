@@ -43,6 +43,9 @@
     <Filter Include="3.Object\1.MoveObj\3.Bullet">
       <UniqueIdentifier>{d2763aa7-4913-405e-9c1b-dedc117aa276}</UniqueIdentifier>
     </Filter>
+    <Filter Include="1.Core\2.Path">
+      <UniqueIdentifier>{844340e2-3bca-47b3-859e-bffdd7389814}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\Main.cpp">
@@ -86,6 +89,9 @@
     </ClCompile>
     <ClCompile Include="include\Object\Bullet.cpp">
       <Filter>3.Object\1.MoveObj\3.Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Core\PathManager.cpp">
+      <Filter>1.Core\2.Path</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +148,9 @@
     </ClInclude>
     <ClInclude Include="include\Object\Bullet.h">
       <Filter>3.Object\1.MoveObj\3.Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\PathManager.h">
+      <Filter>1.Core\2.Path</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

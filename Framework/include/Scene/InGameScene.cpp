@@ -29,7 +29,7 @@ bool CInGameScene::Init()
 
 	SAFE_RELEASE(pMinion);
 
-	CBullet* pBullet = CObj::CreatePrototype<CBullet>("Bullet");
+	CBullet* pBullet = CScene::CreatePrototype<CBullet>("Bullet");
 
 	pBullet->SetSize(50.f, 50.f);
 

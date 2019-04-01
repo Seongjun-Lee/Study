@@ -5,6 +5,7 @@ class CBullet :
 {
 private:
 	friend class CObj;
+	friend class CScene;
 
 private:
 	CBullet();
@@ -14,6 +15,12 @@ private:
 private:
 	float m_fLimitDist;
 	float m_fDist;
+
+public:
+	void SetBulletDistnace(float fDist)
+	{
+		m_fLimitDist = fDist;
+	}
 
 public:
 	virtual bool Init();

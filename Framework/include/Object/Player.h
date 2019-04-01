@@ -5,6 +5,7 @@ class CPlayer :
 {
 private:
 	friend class CObj;
+	friend class CScene;
 
 private:
 	CPlayer();

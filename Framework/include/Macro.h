@@ -5,7 +5,7 @@
 #define SAFE_RELEASE(p) if(p) {p->Release(); p = NULL;}
 
 
-#define DECLARE_SINGLE(Type) \
+#define DECLARE_SINGLE(Type)\
 	private:\
 		static Type* m_pInst;\
 	public:\
@@ -21,7 +21,7 @@
 		}\
 	private:\
 		Type();\
-		~Type();
+		~Type();\
 
 #define DEFINITION_SINGLE(Type) Type* Type::m_pInst = NULL;
 #define GET_SINGLE(Type) Type::GetInst()
