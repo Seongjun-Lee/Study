@@ -1,47 +1,6 @@
-﻿  Minion.cpp
+﻿  InGameScene.cpp
 d:\study\framework\include\types.h(31): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 d:\study\framework\include\types.h(32): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 d:\study\framework\include\types.h(43): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 d:\study\framework\include\types.h(44): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\object\minion.cpp(64): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  MoveObj.cpp
-d:\study\framework\include\types.h(31): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(32): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(43): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(44): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Obj.cpp
-d:\study\framework\include\types.h(31): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(32): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(43): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(44): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Player.cpp
-d:\study\framework\include\types.h(31): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(32): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(43): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(44): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\object\player.cpp(73): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  StaticObj.cpp
-d:\study\framework\include\types.h(31): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(32): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(43): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(44): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  InGameScene.cpp
-d:\study\framework\include\types.h(31): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(32): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(43): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(44): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\object\obj.h(118): error C2259: 'CMinion': 추상 클래스를 인스턴스화할 수 없습니다.
-  d:\study\framework\include\object\obj.h(118): note: 다음 멤버가 원인입니다.
-  d:\study\framework\include\object\obj.h(118): note: 'CMoveObj *CMoveObj::Clone(void)': abstract입니다.
-  d:\study\framework\include\object\moveobj.h(57): note: 'CMoveObj::Clone' 선언을 참조하십시오.
-  d:\study\framework\include\scene\ingamescene.cpp(27): note: 컴파일 중인 함수 템플릿 인스턴스화 'T *CObj::CreateObj<CMinion>(const std::string &,CLayer *)'에 대한 참조를 확인하십시오.
-          with
-          [
-              T=CMinion
-          ]
-  Layer.cpp
-d:\study\framework\include\types.h(31): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(32): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(43): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\study\framework\include\types.h(44): warning C4244: '=': 'const LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  코드를 생성하고 있습니다...
+  Framework.vcxproj -> D:\Study\x64\Debug\Framework.exe

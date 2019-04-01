@@ -20,7 +20,8 @@ public:
 	static void EraseObj(CObj* pObj);
 	static void EraseObj(const string& strTag);
 	static void EraseObj();
-
+	static void ErasePrototype(const string& strTag);
+	static void ErasePrototype();
 protected:
 	class CScene* m_pScene;
 	class CLayer* m_pLayer;
@@ -135,7 +136,7 @@ public:
 		return pObj;
 	}
 
-	static CObj* CreateCloneObj(const string& strPrototypeKey, const string& strTag);
+	static CObj* CreateCloneObj(const string& strPrototypeKey, const string& strTag, class CLayer* pLayer = NULL);
 
 	template <typename T>
 	static T* CreatePrototype(const string& strTag)

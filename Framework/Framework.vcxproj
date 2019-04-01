@@ -22,6 +22,7 @@
     <ClCompile Include="include\Core.cpp" />
     <ClCompile Include="include\Core\Timer.cpp" />
     <ClCompile Include="include\Main.cpp" />
+    <ClCompile Include="include\Object\Bullet.cpp" />
     <ClCompile Include="include\Object\Minion.cpp" />
     <ClCompile Include="include\Object\MoveObj.cpp" />
     <ClCompile Include="include\Object\Obj.cpp" />
@@ -39,6 +40,7 @@
     <ClInclude Include="include\Flag.h" />
     <ClInclude Include="include\Game.h" />
     <ClInclude Include="include\Macro.h" />
+    <ClInclude Include="include\Object\Bullet.h" />
     <ClInclude Include="include\Object\Minion.h" />
     <ClInclude Include="include\Object\MoveObj.h" />
     <ClInclude Include="include\Object\Obj.h" />
